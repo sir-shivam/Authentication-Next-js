@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.17",
     "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.2",
     "next": "15.1.2",
