@@ -5,10 +5,10 @@ import bcryptjs from "bcryptjs";
 import dotenv from "dotenv";
 dotenv.config();
 
-const CLIENT_ID = '1093480144704-h6ri9vmjq0u7o1jtceqtffton5e5qqm2.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
-const REFRESH_TOKEN = '1//04CDItlDQwW9-CgYIARAAGAQSNwF-L9IrkWuJE7UTe3s3Q-cUHTcd-oqV9M4nozOGhzQuvaT9Oc9ce9ZKQo83-lvg6DFVfB1Id9w';
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
+const CLIENT_ID = process.env.CLIENT_ID ;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN ;
+const REDIRECT_URI = process.env.REDIRECT_URI;
 
 const oauth2Client = new google.auth.OAuth2(
   CLIENT_ID,
